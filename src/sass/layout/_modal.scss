@@ -12,7 +12,7 @@
   }
   .modal-text {
     text-align: center;
-    animation: text 15s infinite linear;
+    animation: text 21s infinite linear;
     animation-direction: alternate;
 
     white-space: pre-wrap;
@@ -75,9 +75,10 @@
     padding: 30px 50px 55px;
   }
   @media screen and(min-width: 1280px) {
-    width: 740px;
+    width: 900px;
+    height: 900px;
     // min-height: 70%;
-    padding: 62px 60px;
+    // padding: 62px 60px;
   }
 }
 
@@ -157,7 +158,8 @@
   @media screen and(min-width: 1280px) {
     width: 360px;
     height: 440px;
-    margin-right: 60px;
+    margin-right: 70px;
+    margin-top: 80px;
   }
 }
 

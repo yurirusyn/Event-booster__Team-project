@@ -6,13 +6,13 @@ const refs = {
   gallery: document.querySelector('.gallery'),
   pageCount: document.querySelector('.pagination'),
 };
-fetchImages('', 'US', '0').then(response => {
+fetchImages('', 'AU', '0').then(response => {
   if (response.page.totalPages > 50) {
     response.page.totalPages = 50;
   }
   // console.log(response.page.number+1);
 
-  refs.pageCount.innerHTML = paginationMarkup(response.page.totalPages,response.page.number+1, {
+  refs.pageCount.innerHTML = paginationMarkup(response.page.totalPages, response.page.number + 1, {
     showStart: false,
     showEnd: false,
     baseTag: 'a',

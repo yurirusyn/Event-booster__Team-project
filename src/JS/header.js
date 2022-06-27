@@ -17,8 +17,8 @@ let page = 0;
 refs.pageCount.addEventListener('click', e => {
   e.preventDefault();
   if (e.target.nodeName !== 'A') return;
-  if(e.target.classList.contains('active')){
-    e.preventDefault()
+  if (e.target.classList.contains('active')) {
+    e.preventDefault();
     return;
   }
   const searchingInput = refs.searchingInput.value;
@@ -41,7 +41,11 @@ refs.pageCount.addEventListener('click', e => {
       if (page.totalPages > 50) {
         page.totalPages = 50;
       }
-      refs.pageCount.innerHTML = paginationMarkup(page.totalPages, page.number+1, optionPagination);
+      refs.pageCount.innerHTML = paginationMarkup(
+        page.totalPages,
+        page.number + 1,
+        optionPagination,
+      );
     });
 });
 const countryInput = refs.countryInput.value;
@@ -50,8 +54,7 @@ function onInput(event) {
   event.preventDefault();
   const searchingInput = refs.searchingInput.value;
   const countryInput = refs.countryInput.value;
-  console.log(countryInput);
-  
+
   fetchImages(searchingInput, countryInput, page)
     .then(({ _embedded, page }) => {
       refs.gallery.innerHTML = renderMarkupCards(_embedded.events);
