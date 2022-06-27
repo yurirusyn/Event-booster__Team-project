@@ -1,5 +1,9 @@
 [
   {
+    "countryCode": "AU",
+    "country": "Australia"
+  },
+  {
     "countryCode": "AD",
     "country": "Andorra"
   },
@@ -10,10 +14,6 @@
   {
     "countryCode": "AR",
     "country": "Argentina"
-  },
-  {
-    "countryCode": "AU",
-    "country": "Australia"
   },
   {
     "countryCode": "AT",
