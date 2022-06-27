@@ -10,7 +10,6 @@ fetchImages('', 'AU', '0').then(response => {
   if (response.page.totalPages > 50) {
     response.page.totalPages = 50;
   }
-  // console.log(response.page.number+1);
 
   refs.pageCount.innerHTML = paginationMarkup(response.page.totalPages, response.page.number + 1, {
     showStart: false,
@@ -25,20 +24,15 @@ fetchImages('', 'AU', '0').then(response => {
 });
 //   const date = new Date();
 //   const msDays = Date.parse(date);
-//   console.log(msDays);
+
 //   const eventDate = Date.parse(response._embedded.events[0].dates.start.dateTime);
-//   console.log(eventDate);
 
 //   function filterByDateEvent(msDays, eventDate) {
 //     const eventDates = Date.parse(
 //       response._embedded.events.map(event => event.dates.start.dateTime),
 //     );
-//     console.log(eventDates);
 
 //     // if (eventDates - msDays > 0) {
 //     // }
 //   }
 //   filterByDateEvent(msDays, eventDate);
-
-//   console.log(response._embedded.events[0].dates.start.dateTime);
-//   console.log(sortedByDateEvents);

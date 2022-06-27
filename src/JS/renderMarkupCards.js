@@ -1,8 +1,6 @@
 import 'animate.css';
 
 export default function renderMarkupCards(events) {
-  // console.log(events);
-
   const markup = events
     .map(event => {
       return `

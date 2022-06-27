@@ -6,7 +6,6 @@ const data = countries
   .map(countries => {
     `<option class="input__option select" value="${countries.countryCode[0]}">${countries.country}</option>`;
     return `<option class="input__option select" value="${countries.countryCode}">${countries.country}</option>`;
-    // console.log(country)
   })
   .join('');
 selectCountry.insertAdjacentHTML('beforeend', data);
