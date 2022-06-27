@@ -29,7 +29,7 @@ export default function renderModalInfo(name) {
     const renderMarkup = `
     <div class="backdrop">
   <div class="modal-js">
-  <button data-modal-close class="btn-modal-close">X<svg width="20"><use href="./img/sprite.svg#icon-close"></use></svg></button>
+  <button data-modal-close class="btn-modal-close">X</button>
   <div class="wrapper-image-small"><img  src="${name.images[3].url}" class="modal-image-small"></div>
   <div class="modal-description">
   <div class="wrapper-image-big">
